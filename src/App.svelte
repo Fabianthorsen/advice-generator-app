@@ -41,6 +41,9 @@
 </main>
 
 <style lang="scss">
+  $bright-green: hsl(150, 100%, 66%);
+  $pale-grey: hsl(193, 38%, 86%);
+  $blue-grey: hsl(217, 19%, 24%);
   main {
     font-family: "Manrope", Arial, Helvetica, sans-serif;
     font-weight: 800;
@@ -49,8 +52,8 @@
     height: 100vh;
 
     section {
-      background-color: hsl(217, 19%, 24%);
-      color: hsl(193, 38%, 86%);
+      background-color: $blue-grey;
+      color: $pale-grey;
       width: 300px;
       text-align: center;
       border-radius: 10px;
@@ -60,13 +63,13 @@
       place-items: center;
 
       h1 {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
 
       p {
-        font-size: 0.4rem;
+        font-size: 0.38rem;
         letter-spacing: 4px;
-        color: hsl(150, 100%, 66%);
+        color: $bright-green;
       }
 
       button {
@@ -78,15 +81,15 @@
         width: 60px;
         height: 60px;
         border: none;
-        background-color: hsl(150, 100%, 66%);
+        background-color: $bright-green;
 
         &:hover {
-          box-shadow: 0 0 30px hsl(150, 100%, 66%);
+          box-shadow: 0 0 30px $bright-green;
         }
 
         &:active {
-          box-shadow: 0 0 30px hsl(150, 100%, 66%);
-          background-color: darken($color: hsl(150, 100%, 66%), $amount: 20%);
+          box-shadow: 0 0 30px $bright-green;
+          background-color: darken($color: $bright-green, $amount: 20%);
         }
       }
     }
