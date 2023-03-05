@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![https://pasteboard.co/UasOmOYmAyVU.png](./screenshot.jpg)
+![Screenshot](https://pasteboard.co/UasOmOYmAyVU.png)
 
 ### Links
 
