@@ -61,7 +61,7 @@ Hosting on Netlify was slightly more complicated than what I was used to when ju
 - SCSS
 - CSS Grid
 - Mobile-first workflow
-- [React](https://svelte.dev/) - JS library
+- [Svelte](https://svelte.dev/) - JS library
 
 ## Author
 
