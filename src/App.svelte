@@ -25,10 +25,17 @@
 
 <main>
   <section>
-    <p>Advice #{storeData.id}</p>
+    <p>ADVICE #{storeData.id}</p>
     <h1>“{storeData.advice}”</h1>
+    <picture>
+      <source
+        media="(min-width: 599.99px)"
+        srcset="/src/assets/pattern-divider-desktop.svg"
+      />
+      <img src="/src/assets/pattern-divider-mobile.svg" alt="divider" />
+    </picture>
     <button on:click={fetchAdvice}>
-      <img src="./icon-dice.svg" alt="dice" />
+      <img src="/src/assets/icon-dice.svg" alt="dice" />
     </button>
   </section>
 </main>
@@ -36,17 +43,18 @@
 <style lang="scss">
   main {
     font-family: "Manrope", Arial, Helvetica, sans-serif;
+    font-weight: 800;
     display: grid;
     place-items: center;
     height: 100vh;
 
     section {
-      background-color: hsl(217, 19%, 38%);
+      background-color: hsl(217, 19%, 24%);
       color: hsl(193, 38%, 86%);
       width: 300px;
       text-align: center;
       border-radius: 10px;
-      padding: 20px;
+      padding: 25px 25px 0 25px;
       position: absolute;
       display: grid;
       place-items: center;
@@ -56,7 +64,8 @@
       }
 
       p {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
+        letter-spacing: 4px;
         color: hsl(150, 100%, 66%);
       }
 
@@ -64,7 +73,7 @@
         display: grid;
         place-items: center;
         position: relative;
-        top: 50px;
+        top: 30px;
         border-radius: 50%;
         width: 60px;
         height: 60px;
@@ -79,6 +88,14 @@
           box-shadow: 0 0 30px hsl(150, 100%, 66%);
           background-color: darken($color: hsl(150, 100%, 66%), $amount: 20%);
         }
+      }
+    }
+  }
+
+  @media screen and (min-width: 599.999px) {
+    main {
+      section {
+        width: 500px;
       }
     }
   }
