@@ -30,12 +30,12 @@
     <picture>
       <source
         media="(min-width: 599.99px)"
-        srcset="/src/assets/pattern-divider-desktop.svg"
+        srcset="/assets/pattern-divider-desktop.svg"
       />
-      <img src="/src/assets/pattern-divider-mobile.svg" alt="divider" />
+      <img src="/assets/pattern-divider-mobile.svg" alt="divider" />
     </picture>
     <button on:click={fetchAdvice}>
-      <img src="/src/assets/icon-dice.svg" alt="dice" />
+      <img src="/assets/icon-dice.svg" alt="dice" />
     </button>
   </section>
 </main>
